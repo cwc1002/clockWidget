@@ -1,0 +1,39 @@
+body {
+  color: #ffffff;
+}
+
+.mainWidget {
+  padding: 10px;
+  background: royalblue;
+}
+.clock{
+  width: 400px;
+  margin: 0 auto;
+  background-color: orange;
+  border-radius: 20px 0;
+}
+.clock_date {
+  padding: 10px;
+  font-size:24px;
+}
+
+.clock_time {
+  display: flex;
+  font-size: 100px;
+}
+
+.clock_timeSub {
+  display: grid;
+  font-size: 40px;
+}
+
+.clock_timeSub .period {
+  display: flex;
+  width: 72px;
+  justify-content: center;
+}
+
+.clock_timeSub .second {
+  display: flex;
+  justify-content: center;
+}
