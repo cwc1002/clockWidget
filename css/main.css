@@ -4,19 +4,17 @@ body {
 }
 
 .mainWidget {
-  position: relative;
   padding: 10px;
   background: royalblue;
-  top: 300px;
 }
 .clock{
   width: 400px;
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("https://whale-store.pstatic.net/20230321_279/1679374490459iURk0_JPEG/9.jpg?type=f860_520");
+  /* background-image: url("https://whale-store.pstatic.net/20230321_279/1679374490459iURk0_JPEG/9.jpg?type=f860_520"); */
   background-color: orange;
-  background-size: contain;
-  background-attachment: fixed;
+  /* background-size: contain; */
+  /* background-attachment: fixed; */
   border-radius: 20px 0;
 }
 .clock_date {
@@ -29,23 +27,29 @@ body {
 }
 
 .clock_time .clock_timeMain {
-  /* font-family: clock-digita, sans-serif; */
   font-size: 100px;
   font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1;
 }
 
-.clock_timeSub {
+.clock_time .clock_timeSub {
   display: grid;
-  font-size: 40px;
+  grid-template-rows: 1fr 1fr;
+  font-size: 35px;
 }
 
-.clock_timeSub .period {
+.clock_time .clock_timeSub .period {
   display: flex;
   width: 72px;
   justify-content: center;
+  padding-block-start: 10px;
+  border-block-end: 1px solid hsla(0, 0%, 100%, .3);
 }
 
-.clock_timeSub .second {
+.clock_time .clock_timeSub .second {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+  font-weight: 200;
 }
