@@ -10,35 +10,28 @@ function getTime() {
   const year = today.getFullYear();
   const month = today.getMonth() + 1;
   const day = today.getDate();
-  const day1 = today.getDay();
+  const week = today.getDay();
   const dayName = ['일', '월', '화', '수', '목', '금', '토'];
 
   let hour = today.getHours();
-  // let hour = 23;
   let minute = today.getMinutes();
   let second = today.getSeconds();
   let period = 'AM';
-
-  if (hour < 10) {
-    hour = `0${hour}`;
+  
+  if (hour === 0) {
+    hour = 12;
   } else if (hour > 12) {
-    if (hour < 22) {
-      hour = `0${hour-12}`;
-    } else {
-      hour = `${hour-12}`;
-    }
+    hour -= 12;
     period = 'PM';
   }
-  if (minute < 10) {
-    minute = `0${minute}`;
-  }
-  if (second < 10) {
-    second = `0${second}`;
-  }
-  
-  $clock_date.innerHTML = `${year}년 ${month}월 ${day}일 ${dayName[day1]}요일`;
-  $hour.innerHTML = hour;
-  $minute.innerHTML = minute;
+
+  hour = hour < 10 ? `0${hour}` : hour;
+  minute = minute < 10? `0${minute}` : minute;
+  second = second < 10? `0${second}` : second;
+
+  $clock_date.innerHTML = `${year}년 ${month}월 ${day}일 ${dayName[week]}요일`;
+  $hour.textContent = hour;
+  $minute.textContent = minute;
   $second.innerHTML = second;
   $period.innerHTML = period;
 }

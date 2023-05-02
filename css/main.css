@@ -28,7 +28,7 @@ body {
 
 .clock_time .clock_timeMain {
   font-size: 100px;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: 0px;
   line-height: 1;
 }
@@ -37,6 +37,7 @@ body {
   display: grid;
   grid-template-rows: 1fr 1fr;
   font-size: 35px;
+  font-weight: 100;
 }
 
 .clock_time .clock_timeSub .period {
@@ -50,6 +51,5 @@ body {
 .clock_time .clock_timeSub .second {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  font-weight: 200;
+  align-items: center;
 }
