@@ -1,21 +1,28 @@
 body {
-  height: 6000px;
+  width: 100%;
+  height: 100%;
   color: #ffffff;
 }
 
 .mainWidget {
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  height: 500px;
+  /* padding: 20px; */
   background: royalblue;
+  background-image: url("https://whale-store.pstatic.net/20230321_55/1679374479964ojm1N_JPEG/4.jpg?type=f860_520");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .clock{
-  width: 400px;
-  margin: 0 auto;
+  width: 500px;
+  padding: 30px;
   font-family: Arial, Helvetica, sans-serif;
-  /* background-image: url("https://whale-store.pstatic.net/20230321_279/1679374490459iURk0_JPEG/9.jpg?type=f860_520"); */
-  background-color: orange;
-  /* background-size: contain; */
-  /* background-attachment: fixed; */
-  border-radius: 20px 0;
+  border-radius: 15px;
+  border: 1px solid #fff;
 }
 .clock_date {
   padding: 10px;
@@ -24,10 +31,11 @@ body {
 
 .clock_time {
   display: flex;
+  width: 500px;
 }
 
 .clock_time .clock_timeMain {
-  font-size: 100px;
+  font-size: 100pt;
   font-weight: 300;
   letter-spacing: 0px;
   line-height: 1;
