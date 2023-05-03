@@ -1,17 +1,14 @@
 body {
-  width: 100%;
-  height: 100%;
   color: #ffffff;
 }
 
 .mainWidget {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 100%; */
-  height: 500px;
-  /* padding: 20px; */
-  background: royalblue;
+  width: 100%;
+  height: 100%;
   background-image: url("https://whale-store.pstatic.net/20230321_55/1679374479964ojm1N_JPEG/4.jpg?type=f860_520");
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,8 +22,7 @@ body {
   border: 1px solid #fff;
 }
 .clock_date {
-  padding: 10px;
-  font-size:24px;
+  font-size: 24pt;
 }
 
 .clock_time {
@@ -50,10 +46,10 @@ body {
 
 .clock_time .clock_timeSub .period {
   display: flex;
-  width: 72px;
+  width: 70px;
   justify-content: center;
   padding-block-start: 10px;
-  border-block-end: 1px solid hsla(0, 0%, 100%, .3);
+  border-block-end: 1px solid hsla(0, 0%, 100%, .5);
 }
 
 .clock_time .clock_timeSub .second {
